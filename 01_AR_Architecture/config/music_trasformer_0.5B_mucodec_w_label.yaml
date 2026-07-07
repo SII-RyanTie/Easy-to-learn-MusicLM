@@ -1,0 +1,22 @@
+port: 6120
+
+epochs: 100
+batch_size: 24  
+test_batch_size: 24
+
+warmup_iters: 5000
+val_iters: 3334
+backbone: "MusicTransformer"
+model_name: "MusicTransformer_0.5B_mucodec_w_label"
+
+lr: 0.0004
+seed: 24
+clip_max_norm: 1
+
+vocab_size: 16384
+num_codebooks: 1
+embed_dim: 1280
+max_seq_len: 2048
+num_layers: 24
+num_heads: 16
+dropout: 0.3
