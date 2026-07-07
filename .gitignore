@@ -1,0 +1,25 @@
+cat <<EOT >> .gitignore
+# 模型权重与特征数据
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# 音频与多媒体文件
+*.wav
+*.mp3
+*.flac
+*.mp4
+
+# 训练日志与输出结果
+log/
+output/
+outputs/
+checkpoints/
+wandb/
+
+# Python 缓存与环境
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+EOT
