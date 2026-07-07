@@ -9,7 +9,14 @@ Below is the standardized step-by-step guide to running the entire pipeline.
 ## 🛠️ 1. Preparation: Workspace & Data Preprocessing
 First, ensure you have completed the model and dataset downloads outlined in `00_Preparation.md`. 
 
-Navigate to the dedicated directory for this module and run the data preprocessing script. This script converts raw audio and text into `.pt` feature files that the model can consume directly.
+To get the `.pt` feature files (tokens and text embeddings) required for training, you have two options:
+
+**Option A: Download Pre-processed Data (Recommended)**
+To save time, we have already processed and uploaded the ready-to-use token datasets to Hugging Face. You can directly download them and place them in your data directory:
+🔗 [**SII-RyanTie/MTG_MuCodec_Token_Datasets**](https://huggingface.co/datasets/SII-RyanTie/MTG_MuCodec_Token_Datasets)
+
+**Option B: Process from Scratch**
+If you want to process your own raw audio and text data, navigate to the dedicated directory for this module and run the data preprocessing script:
 
 ```bash
 # Enter the AR architecture directory
